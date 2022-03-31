@@ -37,7 +37,5 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: files
-        files: |
-          linux_s390x_client.tar.gz
-          npc_sdk.tar.gz
+        path: ${{ github.workspace }}
 
