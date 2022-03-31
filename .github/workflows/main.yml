@@ -1,4 +1,4 @@
-name: Go
+name: nps s390x
 
 on:
   workflow_dispatch:
@@ -36,6 +36,6 @@ jobs:
     - name: Upload
       uses: actions/upload-artifact@v1
       with:
-        name: files
-        path: ${{ github.workspace }}
+        name: nps_s390x
+        path: ${{ github.workspace }}/nps_s390x
 
