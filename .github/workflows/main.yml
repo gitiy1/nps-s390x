@@ -1,6 +1,7 @@
 name: Go
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
   pull_request:
@@ -35,6 +36,7 @@ jobs:
     - name: Upload
       uses: actions/upload-artifact@v1
       with:
+        name: files
         files: |
           linux_s390x_client.tar.gz
           npc_sdk.tar.gz
