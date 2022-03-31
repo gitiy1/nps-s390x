@@ -33,11 +33,9 @@ jobs:
       run: chmod +x build.assets.sh && ./build.assets.sh
 
     - name: Upload
-      uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/')
+      uses: actions/upload-artifact@v1
       with:
         files: |
           linux_s390x_client.tar.gz
           npc_sdk.tar.gz
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
