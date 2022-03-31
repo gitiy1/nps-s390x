@@ -13,6 +13,6 @@ tar -czvf linux_s390x_server.tar.gz conf/nps.conf conf/tasks.json conf/clients.j
 
 sudo mkdir /home/nps_s390x 
 
-sudo cp –r linux_s390x_client.tar.gz /home/nps_s390x  
+sudo cp linux_s390x_client.tar.gz /home/nps_s390x  
 
-sudo cp –r linux_s390x_server.tar.gz /home/nps_s390x  
+sudo cp linux_s390x_server.tar.gz /home/nps_s390x  
